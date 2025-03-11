@@ -1,7 +1,7 @@
 // import axios from 'axios';
 import axios from './axiosConfig.ts'
 
-axios.defaults.baseURL = "http://localhost:5256";
+axios.defaults.baseURL = process.env.NODE_ENV;
 
 // const apiUrl = "https://localhost:5256"
 
