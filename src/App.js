@@ -8,14 +8,16 @@ function App() {
   async function getTodos() {
     try{
        const todos = await service.getTasks();
-       console.log("aaa",todos) 
+       
     setTodos(todos);
-    console.log(todos,"hhh");
+
     }
     catch(err){
     }
   }
-
+function aaa(){
+  console.log(todos);
+}
   async function createTodo(e) {
     e.preventDefault();
     try{
@@ -49,16 +51,19 @@ catch(err){
   }, []);
 
   return (
+  
     <section className="todoapp">
       <header className="header">
         <h1>todos</h1>
+        <button onClick={()=>aaa()}>dd</button>
         <form onSubmit={createTodo}>
+
           <input className="new-todo" placeholder="Well, let's take on the day" value={newTodo} onChange={(e) => setNewTodo(e.target.value)} />
         </form>
       </header>
       <section className="main" style={{ display: "block" }}>
         <ul className="todo-list">
-          {todos.map(todo => {
+          {/* {todos.map(todo => {
             return (
               <li className={todo.isComplete ? "completed" : ""} key={todo.id}>
                 <div className="view">
@@ -68,7 +73,7 @@ catch(err){
                 </div>
               </li>
             );
-          })}
+          })} */}
         </ul>
       </section>
     </section >
