@@ -10,6 +10,7 @@ function App() {
        const todos = await service.getTasks();
        console.log("aaa",todos) 
     setTodos(todos);
+    console.log(todos,"hhh");
     }
     catch(err){
     }
@@ -45,7 +46,6 @@ catch(err){
  useEffect(() => {
     console.log("hello")
     getTodos();
-    alert(todos)
   }, []);
 
   return (
