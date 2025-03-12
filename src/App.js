@@ -15,9 +15,7 @@ function App() {
     catch(err){
     }
   }
-function aaa(){
-  console.log(todos);
-}
+
   async function createTodo(e) {
     e.preventDefault();
     try{
@@ -53,7 +51,7 @@ catch(err){
   return (
   
     <section className="todoapp">
-        <button onClick={()=>aaa()}>dd</button>
+     
       <header className="header">
         <h1>todos</h1>
       
