@@ -44,6 +44,7 @@ catch(err){
   }
 
   useEffect(() => {
+    console.log("hello")
     getTodos();
   }, []);
 
