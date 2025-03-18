@@ -7,8 +7,9 @@ function App() {
 
   async function getTodos() {
     try{
-       const todos = await service.getTasks();
-       
+       const todos = await service.getTasks().then(succ=>console.log(succ)).catch(err=>console.log(err));
+
+      alert(todos); 
     setTodos(todos);
 
     }

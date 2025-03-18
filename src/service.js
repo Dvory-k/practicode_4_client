@@ -7,9 +7,8 @@ axios.defaults.baseURL = process.env.NODE_ENV;
 
 export default {
   getTasks: async () => {
-    const result = await axios.get(`items`).then(succ=>
-      console.log(succ)).catch(err=>console.log(err))
-      
+    const result = await axios.get(`items`)
+    
     return result.data;
   },
 
