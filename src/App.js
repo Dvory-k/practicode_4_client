@@ -11,9 +11,9 @@ function App() {
        const todos = await service.getTasks()
       //  .then(succ=>console.log(succ)).catch(err=>console.log(err));
 
-      alert(todos); 
-    // setTodos(todos);
-    setTodos(["a","b","c"]);
+      // alert(todos); 
+    setTodos(todos);
+ 
 
     }
     catch(err){
