@@ -6,6 +6,7 @@ function App() {
   const [todos, setTodos] = useState([]);
 
   async function getTodos() {
+    debugger
     try{
        const todos = await service.getTasks().then(succ=>console.log(succ)).catch(err=>console.log(err));
 
@@ -45,6 +46,7 @@ catch(err){
 }
   }
  useEffect(() => {
+  
     console.log("hello")
     getTodos();
   }, []);
