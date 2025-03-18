@@ -9,7 +9,7 @@ export default {
   getTasks: async () => {
     const result = await axios.get(`/items`)
     
-    return result.data.Items;
+    return result.data;
   },
 
   addTask: async(name)=>{
