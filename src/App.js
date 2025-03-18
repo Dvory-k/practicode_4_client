@@ -13,7 +13,6 @@ function App() {
 
       // alert(todos); 
     setTodos(todos);
- 
 
     }
     catch(err){
