@@ -8,10 +8,12 @@ function App() {
   async function getTodos() {
     debugger
     try{
-       const todos = await service.getTasks().then(succ=>console.log(succ)).catch(err=>console.log(err));
+       const todos = await service.getTasks()
+      //  .then(succ=>console.log(succ)).catch(err=>console.log(err));
 
       alert(todos); 
-    setTodos(todos);
+    // setTodos(todos);
+    setTodos(["a","b","c"]);
 
     }
     catch(err){
