@@ -1,5 +1,5 @@
-import axios from 'axios';
-// import axios from './axiosConfig.ts'
+// import axios from 'axios';
+import axios from './axiosConfig.ts'
 
 axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
