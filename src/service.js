@@ -21,7 +21,7 @@ export default {
   setCompleted: async(id, iscomplete)=>{
    
     // console.log('setCompleted', {id, isComplete})
-    const result = await axios.patch(`/${id}`,{IsComplete:iscomplete})     
+    const result = await axios.patch(`/${id}`,null,{params:{iscomplete}})     
     return result.data;
   },
 
