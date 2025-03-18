@@ -18,10 +18,10 @@ export default {
     return result.data;
   },
 
-  setCompleted: async(id, isComplete)=>{
+  setCompleted: async(id, iscomplete)=>{
    
     // console.log('setCompleted', {id, isComplete})
-    const result = await axios.patch(`/${id}`,{IsComplete:isComplete})     
+    const result = await axios.patch(`/${id}`,{IsComplete:iscomplete})     
     return result.data;
   },
 
